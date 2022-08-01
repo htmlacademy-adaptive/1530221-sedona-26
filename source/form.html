@@ -38,7 +38,7 @@
       </section>
       <section class="form">
         <h2 class="visually-hidden">Форма отзыва о городе Седона</h2>
-        <form class="review-form" action="#" method="get">
+        <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="review-form__form-person form-person">
             <legend class="form-person__title">Представьтесь:</legend>
             <label class="form-person__label--name" for="name">Имя*:</label>
@@ -66,29 +66,112 @@
             <ul class="form-impression__list">
               <li class="form-impression__item">
                 <label class="form-imression__label--positively">
-                  <input class="form-impression__input--positively" name="radio-positively" type="radio" value="positively" required checked>
+                  <input class="form-impression__input--positively" name="radio-impression" type="radio" value="positively" required checked>
                   Скорее положительное
                 </label>
               </li>
               <li class="form-impression__item">
                 <label class="form-imression__label--negative">
-                  <input class="form-impression__input--negative" name="radio-negative" type="radio" value="negative" required>
+                  <input class="form-impression__input--negative" name="radio-impression" type="radio" value="negative" required>
                   Скорее отрицательное
                 </label>
               </li>
               <li class="form-impression__item">
                 <label class="form-imression__label--null">
-                  <input class="form-impression__input--null" name="radio-null" type="radio" value="null" required>
+                  <input class="form-impression__input--null" name="radio-impression" type="radio" value="null" required>
                   Затрудняюсь ответить
                 </label>
               </li>
             </ul>
           </fieldset>
-
+          <fieldset class="review-form__form-showplace form-showplace">
+            <legend class="form-showplace__title">Посещенные достопримечательности:</legend>
+            <label class="form-showplace__label--devil-bridge">
+              <input class="form-showplace__input--devil-bridge" name="checkbox-devil-bridge" type="checkbox" checked>
+              Мост дьявола
+            </label>
+            <label class="form-showplace__label--mountain-bell">
+              <input class="form-showplace__input--mountain-bell" name="checkbox-mountain-bell" type="checkbox" checked>
+              Гора-Колокол
+            </label>
+            <label class="form-showplace__label--slide-park">
+              <input class="form-showplace__input--slide-park" name="checkbox-slide-park" type="checkbox" checked>
+              Слайд-парк
+            </label>
+            <label class="form-showplace__label--red-rocks">
+              <input class="form-showplace__input--red-rocks" name="checkbox-red-rocks" type="checkbox">
+              Красные скалы
+            </label>
+          </fieldset>
+          <fielset class="review-form__form-emotions">
+            <legend class="form-emotions__title"> Опишите свои эмоции:</legend>
+            <textarea class="form-emotions__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fielset>
+          <button class="review-form__button button button--send" type="submit">Отправить отзыв</button>
+          <span class="review-form__footnote">* — обязательные поля</span>
         </form>
       </section>
-
     </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__geolocation">
+          <span class="visually-hidden">Расположение города Седона</span>
+          <img class="main-footer__map" src="./img/map-mobile.jpg" width="320px" height="350px" alt="Геолокация Седоны">
+          <span class="main-footer__map-marker">*</span>
+        </div>
+        <p class="main-footer__hashtag">#VISITSEDONA</p>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social__icon" role="img" aria-label="Иконка Вконтакте" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#000" d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Telegram</span>
+                <svg class="social__icon" role="img" aria-label="Иконка Telegram" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#000" d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">YouTube</span>
+                <svg class="social__icon" role="img" aria-label="Иконка YouTube" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#000" d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__icon" role="img" aria-label="Иконка Html Academy" aria-hidden="true" focusable="false" width="27" height="35"  xmlns="http://www.w3.org/2000/svg">
+              <path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!--Модальные окна-->
+    <section class="modal modal--error modal--hidden ">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button button--ok">Ок</button>
+    </section>
+
+    <section class="modal modal--success modal--hidden">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button button--close">Закрыть окно</button>
+    </section>
 
   </body>
 </html>
