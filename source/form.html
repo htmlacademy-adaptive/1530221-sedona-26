@@ -42,9 +42,9 @@
           <fieldset class="review-form__form-person form-person">
             <legend class="form-person__title">Представьтесь:</legend>
             <label class="form-person__label--name" for="name">Имя*:</label>
-            <input class="form-person__input--name" id="name" name="name" type="text" placeholder="Пётр">
+            <input class="form-person__input--name" id="name" name="name" type="text" placeholder="Пётр" required>
             <label class="form-person__label--surname" for="surname">Фамилия*:</label>
-            <input class="form-person__input--surname" id="surname" name="surname" type="text" placeholder="Пустота">
+            <input class="form-person__input--surname" id="surname" name="surname" type="text" placeholder="Пустота" required>
             <label class="form-person__label--patronymic" for="patronymic">Отчество:</label>
             <input class="form-person__input--patronymic" id="patronymic" name="patronymic" type="text" placeholder="Викторович">
           </fieldset>
@@ -52,12 +52,12 @@
             <legend class="form-contacts__title">Контактная информация:</legend>
             <label class="form-contacts__label--phone">
               Контактный телефон*:
-              <input class="form-contacts__input--phone" name="phone" type="tel" placeholder="Введите телефон">
+              <input class="form-contacts__input--phone" name="phone" type="tel" placeholder="Введите телефон" required>
               <span class="form-contacts__icon--phone">Иконка телефона</span>
             </label>
             <label class="form-contacts__label--email">
               Электронная почта*:
-              <input class="form-contacts__input--email" name="email" type="email" placeholder="Введите e-mail">
+              <input class="form-contacts__input--email" name="email" type="email" placeholder="Введите e-mail" required>
               <span class="form-contacts__icon--email">Иконка почты</span>
             </label>
           </fieldset>
