@@ -1,5 +1,39 @@
+.advantages {
+  font-style: normal;
+  text-transform: uppercase;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__item--blue {
+    color: @text-white;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  &__numder {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  &__image {
+    background-color: @blue-color;
+  }
+}
+
 .advantages__item {
-  list-style-type: none;
 
   &--blue {
   background-color: @blue-color;
@@ -8,8 +42,4 @@
   &--grey {
   background-color: @grey-color;
   }
-}
-
-.advantages__image {
-  background-color: @blue-color;
 }
