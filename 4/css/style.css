@@ -64,6 +64,9 @@
   margin-bottom: 15px;
   background-color: #eeeeee;
 }
+.choice-input {
+  background-color: #ffffff;
+}
 .choice-label {
   font-size: 18px;
   line-height: 26px;
@@ -102,6 +105,9 @@
   font-weight: 700;
   font-display: swap;
 }
+.form-icon {
+  background-color: #ffffff;
+}
 .form-input {
   background-color: #f2f2f2;
   border: none;
@@ -137,7 +143,7 @@
 }
 .intro__image {
   background-color: #81b3d2;
-  background-image: url('../../img/intro-background.jpg');
+  background-image: url("/source/img/intro-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,6 +167,9 @@
   line-height: 21px;
   font-weight: 700;
 }
+.main-container {
+  background-color: #ffffff;
+}
 .main-footer__geolocation {
   margin-bottom: 38px;
 }
@@ -180,6 +189,12 @@
 }
 .main-footer__copyright {
   margin-bottom: 23px;
+}
+.main-header {
+  background-color: #ffffff;
+}
+.main-nav {
+  background-color: #ffffff;
 }
 .modal__message {
   font-size: 14px;
