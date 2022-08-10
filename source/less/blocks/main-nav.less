@@ -1,3 +1,16 @@
-.main-nav {
-  background-color: rgba(255, 255, 255, 1);
+.main-nav__toggle {
+  display: flex;
+  justify-content: flex-end;
+  height: 56px;
+  margin: 0 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
 }

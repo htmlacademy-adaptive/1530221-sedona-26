@@ -1,5 +1,18 @@
 .video-gallery {
   text-transform: uppercase;
+  text-align: center;
+}
+
+.video-gallery__wrapper {
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 200px;
+  }
 }
 
 .video-gallery__text {
@@ -7,5 +20,11 @@
 }
 
 .video-gallery__video {
+  width: 100%;
+  object-fit: cover;
   background-color: @grey-color;
+
+  @media (min-width: @tablet-width) {
+    min-height: 500px;
+  }
 }

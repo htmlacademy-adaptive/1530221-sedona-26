@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - главная страница</title>
 
     <link href="./css/style.css" rel="stylesheet">
@@ -12,18 +13,20 @@
         <img src="./img/logo.svg" width="185" height="96" alt="Логотим Седоны">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle toggle toggle--hidden" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="toggle__burger" role="img" aria-label="Открыть меню" aria-hidden="true" focusable="false" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#000" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
-          </svg>
-        </button>
-        <button class="main-nav__toggle toggle toggle--hidden">
-          <span class="visually-hidden">Закрыть меню</span>
-          <svg class="toggle__cross" role="img" aria-label="Закрыть меню" aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#000" d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
-          </svg>
-        </button>
+        <div class="main-nav__toggle toggle">
+          <button class="toggle__item toggle__item--hidden" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="toggle__burger" role="img" aria-label="Открыть меню" aria-hidden="true" focusable="false" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#000" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
+            </svg>
+          </button>
+          <button class="toggle__item toggle__item--hidden" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+            <svg class="toggle__cross" role="img" aria-label="Закрыть меню" aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#000" d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
+            </svg>
+          </button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
@@ -46,7 +49,9 @@
       <h1 class="visually-hidden">О городе Седона</h1>
       <header class="intro intro--index">
         <div class="intro__wrapper">
-          <img class="intro__image intro__image--index" src="./img/intro-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
+          <div class="intro__container intro__container--index">
+            <img class="intro__image intro__image--index" src="./img/intro-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
+          </div>
           <h2 class="intro__title heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
@@ -56,9 +61,11 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ol class="advantages__list">
             <li class="advantages__item advantages__item--blue">
-              <h3 class="advantages__title heading">Настоящий городок</h3>
-              <p class="advantages__number">— №1 —</p>
-              <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+              <div class="advantages__content">
+                <h3 class="advantages__title heading">Настоящий городок</h3>
+                <p class="advantages__number">— №1 —</p>
+                <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
+              </div>
               <img class="advantages__image" src="./img/advantages-city@1x1.jpeg" width="320" height="260" alt="Улица Седоны">
               <ul class="advantages__more subadvantages">
                 <li class="subadvantages__item subadvantages__item--housing">
@@ -76,9 +83,11 @@
               </ul>
             </li>
             <li class="advantages__item advantages__item--blue">
-              <h3 class="advantages__title heading">Там есть мост дьявола</h3>
-              <p class="advantages__number">— №2 —</p>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмлитесь, конечно</p>
+              <div class="advantages__content">
+                <h3 class="advantages__title heading">Там есть мост дьявола</h3>
+                <p class="advantages__number">— №2 —</p>
+                <p class="advantages__description">Да, по нему можно пройти! Если вы осмлитесь, конечно</p>
+              </div>
               <img class="advantages__image" src="./img/advantages-bridge@1x1.jpeg" width="320" height="260" alt="Мост дьявола">
             </li>
             <li class="advantages__item advantages__item--grey">
@@ -112,7 +121,7 @@
         <div class="main-footer__geolocation">
           <h2 class="visually-hidden">Расположение города Седона</h2>
           <img class="main-footer__map" src="./img/map-mobile.jpg" width="320" height="350" alt="Геолокация Седоны">
-          <span class="main-footer__map-marker">*</span>
+          <span class="main-footer__map-marker"></span>
         </div>
         <p class="main-footer__hashtag">#VISITSEDONA</p>
         <div class="main-footer__social social">
@@ -122,7 +131,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="social__icon" role="img" aria-label="Иконка Вконтакте" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#000" d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"/>
+                    <path fill="#fff" d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.32 17.34 9.38 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 18.22 19.4 19 20.41 19h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"/>
                 </svg>
               </a>
             </li>
@@ -130,7 +139,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Telegram</span>
                 <svg class="social__icon" role="img" aria-label="Иконка Telegram" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#000" d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"/>
+                  <path fill="#fff" d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"/>
                 </svg>
               </a>
             </li>
@@ -138,7 +147,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">YouTube</span>
                 <svg class="social__icon" role="img" aria-label="Иконка YouTube" aria-hidden="true" focusable="false" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#000" d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"/>
+                  <path fill="#fff" d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"/>
                 </svg>
               </a>
             </li>

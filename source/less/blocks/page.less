@@ -1,57 +1,3 @@
-/* ПЕРЕМЕННЫЕ */
-/* Цвет */
-@blue-color: rgba(129, 179, 210, 1);
-@grey-color: rgba(238, 238, 238, 1);
-@input-color: rgba(242, 242, 242, 1);
-@text-white: rgba(255, 255, 255, 1);
-@text-black: rgba(51, 51, 51, 1);
-
-/* Шрифт */
-@size-small: 14px;
-@size-medium: 18px;
-@size-large: 21px;
-@line-small: 21px;
-@line-medium: 26px;
-@width-normal: 400;
-@width-bold: 700;
-
-/* ПРИМЕСИ */
-.font-small() {
-  font-size: @size-small;
-  line-height: @line-small;
-  font-weight: @width-normal;
-}
-
-.font-small-bold() {
-  font-size: @size-small;
-  line-height: @line-small;
-  font-weight: @width-bold;
-}
-
-.font-medium() {
-  font-size: @size-medium;
-  line-height: @line-medium;
-  font-weight: @width-normal;
-}
-
-.font-medium-bold {
-  font-size: @size-medium;
-  line-height: @line-medium;
-  font-weight: @width-bold;
-}
-
-.font-large {
-  font-size: @size-large;
-  line-height: @line-medium;
-  font-weight: @width-normal;
-}
-
-.font-large-bold {
-  font-size: @size-large;
-  line-height: @line-medium;
-  font-weight: @width-bold;
-}
-
 /* СКРЫТЫЕ ЭЛЕМЕНТЫ */
 .visually-hidden {
   position: absolute;
@@ -68,4 +14,8 @@
 
 .page {
   font-family: "PT Sans", sans-serif;
+}
+
+.page__body {
+  margin: 0 10px;
 }
