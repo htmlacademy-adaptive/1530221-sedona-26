@@ -1,12 +1,23 @@
+.main-footer__wrapper{
+  margin-bottom: 36px;
+}
+
 .main-footer__geolocation {
+  min-width: 100%;
   margin-bottom: 38px;
 }
 
 .main-footer__map {
   background-color: @blue-color;
+  object-fit: cover;
+  width: 100%;
+  min-height: 350px;
 }
 
 .main-footer__hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   margin-bottom: 33px;
   text-transform: uppercase;
@@ -14,9 +25,33 @@
 }
 
 .main-footer__social {
-  margin-bottom: 47px;
+  margin-bottom: 40px;
 }
 
 .main-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .main-footer__hashtag {
+    margin: 0;
+  }
+
+  .main-footer__social {
+    margin: 0;
+  }
+
+  .main-footer__copyright {
+    margin: 0;
+  }
 }

@@ -1,3 +1,29 @@
 .showplace {
   border: none;
 }
+
+.showplace__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.showplace__title {
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.showplace__label {
+  margin-bottom: 16px;
+}
