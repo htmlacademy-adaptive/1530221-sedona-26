@@ -29,11 +29,24 @@
 
 .advantages__content {
   text-align: center;
-  width: 290px;
   margin: 0 auto;
 }
 
+.advantages__content--blue {
+  margin: 0 15px;
+}
+
+.advantages__content--grey {
+  margin: 0 18px;
+  border-bottom: rgba(214, 214, 214, 1) solid 1px;
+}
+
+.advantages__item--grey:last-child .advantages__content--grey {
+  border: none;
+}
+
 .advantages__title {
+  margin: 0;
   padding-top: 54px;
   padding-bottom: 11px;
 }
@@ -67,6 +80,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/4;
+  }
+
+  .advantages__content--grey {
+    border: none;
   }
 
   .advantages__content {
