@@ -12,21 +12,10 @@
       <a class="main-header__logo">
         <img src="./img/logo.svg" width="185" height="96" alt="Логотим Седоны">
       </a>
-      <nav class="main-nav">
-        <div class="main-nav__toggle toggle">
-          <button class="toggle__item toggle__item--hidden" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <svg class="toggle__burger" role="img" aria-label="Открыть меню" aria-hidden="true" focusable="false" width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#000" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
-            </svg>
-          </button>
-          <button class="toggle__item toggle__item--hidden" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
-            <svg class="toggle__cross" role="img" aria-label="Закрыть меню" aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#000" d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
-            </svg>
-          </button>
-        </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
@@ -53,7 +42,7 @@
             <img class="intro__picture intro__picture--index" src="./img/intro-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona Because the Grand Canyon sucks!">
           </div>
           <div class="intro__text">
-            <h2 class="intro__title heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <h2 class="intro__title heading">Седона — небольшой<br>городок в Аризоне, заслуживающий большего!</h2>
             <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
         </div>
@@ -179,5 +168,6 @@
       </div>
     </footer>
 
+    <script src="./script.js"></script>
   </body>
 </html>

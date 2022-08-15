@@ -1,20 +1,110 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__wrapper {
   background-color: @text-white;
 }
 
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
 .main-nav__toggle {
-  display: flex;
-  justify-content: flex-end;
-  height: 56px;
-  margin: 0 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  display: block;
+  width: 63px;
+  height: 55px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: @blue-color;
+  box-shadow: 0 7px 0 0 @blue-color,
+              0 14px 0 0 @blue-color;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: fade(@blue-color, 60%);
+  box-shadow: 0 7px 0 0 fade(@blue-color, 60%),
+              0 14px 0 0 fade(@blue-color, 60%);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(@blue-color, 30%);
+  box-shadow: 0 7px 0 0 fade(@blue-color, 30%),
+              0 14px 0 0 fade(@blue-color, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 28px;
+    height: 4px;
+    background-color: @text-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover {
+  &::before,
+  &::after {
+    background-color: fade(@text-white, 60%);
+  }
+}
+
+.main-nav--opened .main-nav__toggle:active {
+  &::before,
+  &::after {
+    background-color: fade(@text-white, 30%);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    padding-top: 96px;
+    position: static;
+  }
+
+  .main-nav--nojs .site-list {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
   }
-}
-
-.main-nav__list {
-  margin: 0;
 }
