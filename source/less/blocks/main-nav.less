@@ -6,7 +6,8 @@
   background-color: @text-white;
 }
 
-.main-nav--opened .main-nav__wrapper {
+.main-nav--opened
+.main-nav__wrapper {
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -25,7 +26,8 @@
   border: none;
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-nav--closed
+.main-nav__toggle::before {
   content: "";
   position: absolute;
   top: 17px;
@@ -37,19 +39,22 @@
               0 18px 0 0 @blue-color;
 }
 
-.main-nav--closed .main-nav__toggle:hover::before {
+.main-nav--closed
+.main-nav__toggle:hover::before {
   background-color: fade(@blue-color, 60%);
   box-shadow: 0 7px 0 0 fade(@blue-color, 60%),
               0 14px 0 0 fade(@blue-color, 60%);
 }
 
-.main-nav--closed .main-nav__toggle:active::before {
+.main-nav--closed
+.main-nav__toggle:active::before {
   background-color: fade(@blue-color, 30%);
   box-shadow: 0 7px 0 0 fade(@blue-color, 30%),
               0 14px 0 0 fade(@blue-color, 30%);
 }
 
-.main-nav--opened .main-nav__toggle {
+.main-nav--opened
+.main-nav__toggle {
   &::before,
   &::after {
     content: "";
@@ -70,14 +75,16 @@
   }
 }
 
-.main-nav--opened .main-nav__toggle:hover {
+.main-nav--opened
+.main-nav__toggle:hover {
   &::before,
   &::after {
     background-color: fade(@text-white, 60%);
   }
 }
 
-.main-nav--opened .main-nav__toggle:active {
+.main-nav--opened
+.main-nav__toggle:active {
   &::before,
   &::after {
     background-color: fade(@text-white, 30%);
@@ -85,20 +92,24 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed
+  .site-list__item {
     display: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
+  .main-nav--nojs
+  .main-nav__toggle {
     display: none;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
+  .main-nav--nojs
+  .main-nav__wrapper {
     padding-top: 96px;
     position: static;
   }
 
-  .main-nav--nojs .site-list__item {
+  .main-nav--nojs
+  .site-list__item {
     display: block;
   }
 }
