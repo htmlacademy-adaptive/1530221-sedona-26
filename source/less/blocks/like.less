@@ -1,8 +1,21 @@
 .like__button {
+  padding: 0;
+  padding-right: 10px;
   border: none;
   background-color: transparent;
 }
 
+.like__icon {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
 .like__amount {
   .font-small-bold;
+}
+
+@media (min-width: @desktop-width) {
+
+  .like__icon {
+    fill: @text-white;
+  }
 }

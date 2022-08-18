@@ -23,6 +23,13 @@
   background-color: @blue-color;
 }
 
+.advantages__item--blue:nth-child(1) {
+  background-image: url("../../img/intro-container-decor.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+
 .advantages__item--grey {
   background-color: @grey-color;
 }
@@ -75,7 +82,7 @@
 
   .advantages__item--blue:nth-child(1)
   .advantages__title {
-    padding-top: 55px;
+    padding-top: 70px;
   }
 
   .advantages__item--blue:nth-child(1)
@@ -139,6 +146,10 @@
 
   .advantages__image {
     grid-column: 2/4;
+  }
+
+  .advantages__item--blue:nth-child(1) {
+    background-image: none;
   }
 
   .advantages__item--blue:nth-child(2)
