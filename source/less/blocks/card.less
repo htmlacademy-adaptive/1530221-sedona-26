@@ -11,9 +11,71 @@
 }
 
 .card__photo {
-  order: -1;
   object-fit: cover;
   width: 100%;
   margin-bottom: 15px;
-  background-color: @grey-color;
+}
+
+@media (min-width: @tablet-width) {
+
+  .card {
+    background-color: @input-color;
+  }
+
+  .card:nth-child(3) {
+    background-color: rgba(234, 234, 234, 1);
+  }
+
+  .card__photo {
+    margin: 0;
+    height: 267px;
+  }
+
+  .card:first-child
+  .card__photo {
+    height: 400px;
+  }
+
+  .card__container {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 18px;
+    padding-left: 20px;
+    min-height: 58px;
+  }
+
+  .card__like {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .card {
+    position: relative;
+  }
+
+  .card__container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .card__text {
+    color: @text-white;
+  }
+
+  .card__like {
+    color: @text-white;
+  }
 }

@@ -1,27 +1,114 @@
 .subadvantages {
   grid-column: 1/4;
   width: 100%;
+  min-height: 284px;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  background-color: @text-white;
 }
 
 .subadvantages__item {
   color: @text-black;
   list-style-type: none;
   background-color: rgba(255, 255, 255, 1);
+  background-repeat: no-repeat;
+
+  &--housing {
+    background-image: url('../../img/subadvantages-house.svg');
+    background-position: 18px 25px;
+  }
+
+  &--food {
+    background-image: url('../../img/subadvantages-burger.svg');
+    background-position: 18px 25px;
+  }
+
+  &--souvenirs {
+    background-image: url('../../img/subadvantages-gift.svg');
+    background-position: 18px 25px;
+  }
+}
+
+.subadvantages__content {
+  min-height: 113px;
+  // margin: 0 18px;
+  padding-left: 65px;
+  padding-right: 18px;
 }
 
 .subadvantages__title {
+  margin: 0;
   padding-top: 30px;
   padding-bottom: 16px;
 }
 
 .subadvantages__description {
   margin: 0;
-  padding-bottom: 30px;
   .font-small;
+}
+
+@media (max-width: @mobile-width-only) {
+  .subadvantages {
+    padding-bottom: 52px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .subadvantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .subadvantages__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .subadvantages__content {
+    width: 196px;
+    min-height: 330px;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .subadvantages__title {
+    padding-top: 158px;
+    padding-bottom: 22px;
+  }
+
+  .subadvantages__item--housing {
+    background-size: 75px 72px;
+    background-position: 50% 23%;
+  }
+
+  .subadvantages__item--food {
+    background-size: 76px 68px;
+    background-position: 50% 24%;
+  }
+
+  .subadvantages__item--souvenirs {
+    background-size: 64px 75px;
+    background-position: 50% 23%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .subadvantages__content {
+    width: 300px;
+    min-height: 330px;
+    padding: 0 50px;
+  }
+
+  .subadvantages__item--housing {
+    background-position: 161px 60px;
+  }
+
+  .subadvantages__item--food {
+    background-position: 161px 65px;
+  }
+
+  .subadvantages__item--souvenirs {
+    background-position: 166px 57px;
+  }
 }

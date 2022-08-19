@@ -1,10 +1,11 @@
 .main-footer__wrapper{
-  margin-bottom: 36px;
+  padding-bottom: 36px;
+  background-color: @text-white;
 }
 
 .main-footer__geolocation {
   min-width: 100%;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 }
 
 .main-footer__map {
@@ -12,6 +13,7 @@
   object-fit: cover;
   width: 100%;
   min-height: 350px;
+  border: none;
 }
 
 .main-footer__hashtag {
@@ -19,20 +21,13 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   text-transform: uppercase;
-  .font-medium-bold;
+  .font-large-bold;
 }
 
 .main-footer__social {
   margin-bottom: 40px;
-}
-
-.main-footer__copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 23px;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,6 +36,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 35px;
+  }
+
+  .main-footer__geolocation {
+    margin-bottom: 31px;
   }
 
   .main-footer__hashtag {

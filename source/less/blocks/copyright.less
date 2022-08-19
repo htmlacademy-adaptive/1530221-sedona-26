@@ -1,9 +1,21 @@
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 23px;
   text-transform: uppercase;
 }
 
 .copyright__title {
-  width: 121px;
+  margin: 0;
+  padding-right: 13px;
   text-align: center;
   .font-small;
+}
+
+@media (min-width: @tablet-width) {
+
+  .copyright {
+    padding: 0;
+  }
 }
