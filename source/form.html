@@ -63,10 +63,14 @@
             <div class="review-form__container">
               <fieldset class="review-form__section review-form__section--contact-info">
                 <legend class="review-form__title heading">Контактная информация:</legend>
-                <label class="review-form__label review-form__label--phone" for="phone">Контактный телефон*:</label>
-                <input class="review-form__input review-form__input--phone" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
-                <label class="review-form__label review-form__label--email" for="email">Электронная почта*:</label>
-                <input class="review-form__input review-form__input--email" id="email" name="email" type="email" placeholder="Введите e-mail" required>
+                <label class="review-form__label" for="phone">Контактный телефон*:</label>
+                <div class="review-form__icon review-form__icon--phone">
+                  <input class="review-form__input" id="phone" name="phone" type="tel" placeholder="Введите телефон" required>
+                </div>
+                <label class="review-form__label" for="email">Электронная почта*:</label>
+                <div class="review-form__icon review-form__icon--email">
+                  <input class="review-form__input" id="email" name="email" type="email" placeholder="Введите e-mail" required>
+                </div>
               </fieldset>
             </div>
             <div class="review-form__container">
@@ -74,16 +78,25 @@
                 <legend class="review-form__title heading">Ваше общее впечатление:</legend>
                 <ul class="review-form__list">
                   <li class="review-form__item">
-                    <label class="review-form__label review-form__label--choice" for="radio-positive">Скорее положительное</label>
-                    <input class="review-form__input review-form__input--choice" id="radio-positive" name="radio-impression" type="radio" value="positively" required checked>
+                    <label class="review-form__label review-form__label--choice">
+                      <input class="review-form__input visually-hidden" name="radio-impression" type="radio" value="positively" required checked>
+                      <span class="review-form__mark"></span>
+                      <span class="review-form__description">Скорее положительное</span>
+                    </label>
                   </li>
                   <li class="review-form__item">
-                    <label class="review-form__label review-form__label--choice" for="radio-negative">Скорее отрицательное</label>
-                    <input class="review-form__input review-form__input--choice" id="radio-negative" name="radio-impression" type="radio" value="negative" required>
+                    <label class="review-form__label review-form__label--choice">
+                      <input class="review-form__input visually-hidden" name="radio-impression" type="radio" value="negative" required>
+                      <span class="review-form__mark"></span>
+                      <span class="review-form__description">Скорее отрицательное</span>
+                    </label>
                   </li>
                   <li class="review-form__item">
-                    <label class="review-form__label review-form__label--choice" for="radio-empty">Затрудняюсь ответить</label>
-                    <input class="review-form__input review-form__input--choice" id="radio-empty" name="radio-impression" type="radio" value="null" required>
+                    <label class="review-form__label review-form__label--choice">
+                      <input class="review-form__input visually-hidden" name="radio-impression" type="radio" value="null" required>
+                      <span class="review-form__mark"></span>
+                      <span class="review-form__description">Затрудняюсь ответить</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -93,20 +106,32 @@
                 <legend class="review-form__title heading">Посещенные достопримечательности:</legend>
                 <ul class="review-form__list">
                   <li class="review-form__item">
-                    <label class="review-form__label review-form__label--choice" for="checkbox-bridge">Мост дьявола</label>
-                    <input class="review-form__input review-form__input--choice" id="checkbox-bridge" name="checkbox-devil-bridge" type="checkbox" checked>
+                    <label class="review-form__label review-form__label--choice">
+                      <input class="review-form__input visually-hidden" name="checkbox-devil-bridge" type="checkbox" checked>
+                      <span class="review-form__mark"></span>
+                      <span class="review-form-description">Мост Дьявола</span>
+                    </label>
                   </li>
                   <li class="review-form__item">
-                    <label class="review-form__label review-form__label--choice" for="checkbox-mount">Гора-Колокол</label>
-                    <input class="review-form__input review-form__input--choice" id="checkbox-mount" name="checkbox-mountain-bell" type="checkbox" checked>
+                    <label class="review-form__label review-form__label--choice">
+                      <input class="review-form__input visually-hidden" name="checkbox-mountain-bell" type="checkbox" checked>
+                      <span class="review-form__mark"></span>
+                      <span class="review-form-description">Гора-Колокол</span>
+                    </label>
                   </li>
                   <li class="review-form__item">
-                    <label class="review-form__label review-form__label--choice" for="checkbox-park">Слайд-парк</label>
-                    <input class="review-form__input review-form__input--choice" id="checkbox-park" name="checkbox-slide-park" type="checkbox" checked>
+                    <label class="review-form__label review-form__label--choice">
+                      <input class="review-form__input visually-hidden" name="checkbox-slide-park" type="checkbox" checked>
+                      <span class="review-form__mark"></span>
+                      <span class="review-form-description">Слайд-парк</span>
+                    </label>
                   </li>
                   <li class="review-form__item">
-                    <label class="review-form__label review-form__label--choice" for="checkbox-rock">Красные скалы</label>
-                    <input class="review-form__input review-form__input--choice" id="checkbox-rock" name="checkbox-red-rocks" type="checkbox">
+                    <label class="review-form__label review-form__label--choice">
+                      <input class="review-form__input visually-hidden" name="checkbox-red-rocks" type="checkbox">
+                      <span class="review-form__mark"></span>
+                      <span class="review-form-description">Красные скалы</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
