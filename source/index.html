@@ -57,7 +57,16 @@
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__description">Седона не атракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="advantages__image" src="./img/advantages-city@1x1.jpeg" width="320" height="260" alt="Улица Седоны">
+              <div class="advantages__image">
+                <picture>
+                  <source media="(min-width:1200px) and (min-resolution: 2dppx)" srcset="./img/advantages-city-desktop@2x.jpg">
+                  <source media="(min-width: 1200px)" srcset="./img/advantages-city-desktop@1x.jpg">
+                  <source media="(min-width:768px) and (min-resolution: 2dppx)" srcset="./img/advantages-city-tablet@2x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/advantages-city-tablet@1x.jpg">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/advantages-city-mobile@2x.jpg">
+                  <img src="./img/advantages-city-mobile@1x.jpg" width="320" height="260" alt="Улица Седоны">
+                </picture>
+              </div>
               <ul class="advantages__more subadvantages">
                 <li class="subadvantages__item subadvantages__item--housing">
                   <div class="subadvantages__content">
@@ -80,7 +89,16 @@
               </ul>
             </li>
             <li class="advantages__item advantages__item--blue">
-              <img class="advantages__image" src="./img/advantages-bridge@1x1.jpeg" width="320" height="260" alt="Мост дьявола">
+              <div class="advantages__image">
+                <picture>
+                  <source media="(min-width:1200px) and (min-resolution: 2dppx)" srcset="./img/advantages-bridge-desktop@2x.jpg">
+                  <source media="(min-width: 1200px)" srcset="./img/advantages-bridge-desktop@1x.jpg">
+                  <source media="(min-width:768px) and (min-resolution: 2dppx)" srcset="./img/advantages-bridge-tablet@2x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/advantages-bridge-tablet@1x.jpg">
+                  <source media="(min-resolution: 2dppx)" srcset="./img/advantages-bridge-mobile@2x.jpg">
+                  <img src="./img/advantages-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+                </picture>
+              </div>
               <div class="advantages__content advantages__content--blue">
                 <h3 class="advantages__title heading">Там есть мост дьявола</h3>
                 <p class="advantages__number">— №2 —</p>
