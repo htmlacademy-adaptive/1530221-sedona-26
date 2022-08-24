@@ -10,7 +10,8 @@
   .font-small;
 }
 
-.card__photo {
+.card__photo
+img {
   object-fit: cover;
   width: 100%;
   margin-bottom: 15px;
@@ -26,13 +27,15 @@
     background-color: rgba(234, 234, 234, 1);
   }
 
-  .card__photo {
+  .card__photo
+  img {
     margin: 0;
     height: 267px;
   }
 
   .card:first-child
-  .card__photo {
+  .card__photo
+  img {
     height: 400px;
   }
 
@@ -61,6 +64,11 @@
 
   .card {
     position: relative;
+    height: 267px;
+  }
+
+  .card:first-child {
+    height: 400px;
   }
 
   .card__container {
