@@ -1,16 +1,24 @@
-.like__button {
-  padding: 0;
-  padding-right: 10px;
+.like {
   border: none;
   background-color: transparent;
+  font-family: inherit;
+  .font-small-bold;
 }
 
 .like__icon {
   fill: rgba(0, 0, 0, 0.3);
+  padding-right: 11px;
 }
 
-.like__amount {
-  .font-small-bold;
+@media (min-width: @tablet-width) {
+
+  .like__icon {
+    padding-right: 9px;
+  }
+
+  .like__amount {
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: @desktop-width) {
