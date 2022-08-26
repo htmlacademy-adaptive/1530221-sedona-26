@@ -63,11 +63,11 @@
   }
 
   &--phone::before {
-    background-image: url("../img/icon-phone.svg");
+    background-image: url("../img/icon/phone.svg");
   }
 
   &--email::before {
-    background-image: url("../img/icon-mail.svg");
+    background-image: url("../img/icon/mail.svg");
   }
 }
 
@@ -109,7 +109,7 @@
 }
 
 .review-form__input {
-  width: auto;
+  width: calc(100% - 16px);
   height: 58px;
   padding: 0;
   padding-left: 16px;
@@ -158,6 +158,7 @@
 .review-form__textarea {
   width: 93%;
   min-height: 132px;
+  padding: 0;
   padding-top: 16px;
   padding-left: 16px;
   background-color: @input-color;
@@ -269,9 +270,8 @@
   }
 
   .review-form__textarea {
-    padding: 0;
-    width: 100%;
-    min-height: 160px;
+    width: calc(100% - 16px);
+    min-height: 144px;
   }
 
   .review-form__button {
