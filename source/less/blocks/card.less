@@ -1,3 +1,13 @@
+.card__photo {
+  margin-bottom: 10px;
+}
+
+.card__photo
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .card__title {
   margin: 0;
   text-transform: uppercase;
@@ -6,15 +16,12 @@
 
 .card__author {
   display: block;
-  margin-bottom: 11px;
+  padding-bottom: 12px;
   .font-small;
 }
 
-.card__photo
-img {
-  object-fit: cover;
-  width: 100%;
-  margin-bottom: 15px;
+.card__like {
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -27,14 +34,27 @@ img {
     background-color: rgba(234, 234, 234, 1);
   }
 
-  .card__photo
-  img {
-    margin: 0;
+  .card
+  picture {
+    display: block;
     height: 267px;
   }
 
   .card:first-child
+  picture {
+    height: 400px;
+  }
+
+  .card__photo {
+    margin: 0;
+  }
+
   .card__photo
+  img {
+    height: 267px;
+  }
+
+  .card:first-child
   img {
     height: 400px;
   }
@@ -56,6 +76,8 @@ img {
   }
 
   .card__like {
+    display: flex;
+    align-items: center;
     padding-right: 20px;
   }
 }
