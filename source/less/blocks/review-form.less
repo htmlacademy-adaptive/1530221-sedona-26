@@ -11,71 +11,6 @@
   }
 }
 
-/* Блок - Представьтесь */
-.review-form__container:nth-child(1) {
-  padding-top: 22px;
-  padding-bottom: 23px;
-
-  .review-form__title {
-    padding-top: 2px;
-    padding-bottom: 20px;
-  }
-}
-
-/* Блок - Контактная информация */
-.review-form__container:nth-child(2){
-  padding-top: 21px;
-  padding-bottom: 19px;
-
-  .review-form__title {
-    padding-top: 3px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Блок - Ваше общее впечатление */
-.review-form__container:nth-child(3) {
-  padding-top: 23px;
-  padding-bottom: 7px;
-
-  .review-form__title {
-    padding-top: 2px;
-    padding-bottom: 20px;
-  }
-}
-
-/* Блок - Посещенные достопримечательности */
-.review-form__container:nth-child(4) {
-  padding-top: 23px;
-  padding-bottom: 8px;
-
-  .review-form__title {
-    padding-top: 2px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Блок - Опишите свои эмоции */
-.review-form__container:nth-child(5) {
-  padding-top: 23px;
-  padding-bottom: 23px;
-
-  .review-form__title {
-    padding-bottom: 22px;
-  }
-}
-
-/* Блок - Кнопка отправки отзыва */
-.review-form__container:nth-child(6) {
-  padding-top: 29px;
-  padding-bottom: 29px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 0;
-  border: none;
-}
-
 .review-form__section {
   padding: 0;
   margin: 0;
@@ -86,30 +21,6 @@
 .review-form__section--contact-info {
   display: flex;
   flex-direction: column;
-}
-
-.review-form__icon {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: rgba(230, 230, 230, 1);
-  }
-
-  &--phone::before {
-    background-image: url("../img/icon/phone.svg");
-  }
-
-  &--email::before {
-    background-image: url("../img/icon/mail.svg");
-  }
 }
 
 .review-form__title {
@@ -145,6 +56,7 @@
   .font-medium-bold
 }
 
+/* Инпуты */
 .review-form__input {
   width: calc(100% - 16px);
   height: 58px;
@@ -192,6 +104,84 @@
   background-image: url("../img/checkbox-mark.svg");
 }
 
+/* Блок - Представьтесь */
+.review-form__container:nth-child(1) {
+  padding-top: 22px;
+  padding-bottom: 23px;
+
+  .review-form__title {
+    padding-top: 2px;
+    padding-bottom: 20px;
+  }
+}
+
+/* Блок - Контактная информация */
+.review-form__container:nth-child(2){
+  padding-top: 21px;
+  padding-bottom: 19px;
+
+  .review-form__title {
+    padding-top: 3px;
+    padding-bottom: 19px;
+  }
+}
+
+.review-form__icon {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(230, 230, 230, 1);
+  }
+
+  &--phone::before {
+    background-image: url("../img/icon/phone.svg");
+  }
+
+  &--email::before {
+    background-image: url("../img/icon/mail.svg");
+  }
+}
+
+/* Блок - Ваше общее впечатление */
+.review-form__container:nth-child(3) {
+  padding-top: 23px;
+  padding-bottom: 7px;
+
+  .review-form__title {
+    padding-top: 2px;
+    padding-bottom: 20px;
+  }
+}
+
+/* Блок - Посещенные достопримечательности */
+.review-form__container:nth-child(4) {
+  padding-top: 23px;
+  padding-bottom: 8px;
+
+  .review-form__title {
+    padding-top: 2px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Блок - Опишите свои эмоции */
+.review-form__container:nth-child(5) {
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  .review-form__title {
+    padding-bottom: 22px;
+  }
+}
+
 .review-form__textarea {
   width: 94%;
   min-height: 132px;
@@ -203,6 +193,17 @@
   font-family: inherit;
   .font-medium-bold;
   color: rgba(0, 0, 0, 0.3); /* РАЗОБРАТЬСЯ! */
+}
+
+/* Блок - Кнопка отправки отзыва */
+.review-form__container:nth-child(6) {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0;
+  border: none;
 }
 
 .review-form__button {
