@@ -58,7 +58,7 @@
 
 /* ИНПУТЫ */
 .review-form__input {
-  width: calc(100% - 16px);
+  width: calc(100% - 20px);
   height: 58px;
   padding: 0;
   padding-left: 16px;
@@ -69,6 +69,10 @@
   font-family: inherit;
   .font-medium-bold;
   color: rgba(0, 0, 0, 0.3); /* РАЗОБРАТЬСЯ! */
+}
+
+.review-form__choice {
+  display: none;
 }
 
 .review-form__mark {
@@ -85,7 +89,7 @@
   border-radius: 50%;
 }
 
-.review-form__input:checked +
+.review-form__choice:checked +
 .review-form__mark {
   position: absolute;
   width: 46px;
@@ -94,12 +98,12 @@
   background-position: center;
 }
 
-.review-form__input[type="radio"]:checked +
+.review-form__choice[type="radio"]:checked +
 .review-form__mark {
   background-image: url("../img/radio-mark.svg");
 }
 
-.review-form__input[type="checkbox"]:checked +
+.review-form__choice[type="checkbox"]:checked +
 .review-form__mark {
   background-image: url("../img/checkbox-mark.svg");
 }
@@ -183,11 +187,9 @@
 }
 
 .review-form__textarea {
-  width: 94%;
-  min-height: 132px;
-  padding: 0;
-  padding-top: 16px;
-  padding-left: 16px;
+  width: 88%;
+  min-height: 116px;
+  padding: 16px;
   background-color: @input-color;
   border: none;
   font-family: inherit;
@@ -334,8 +336,8 @@
   }
 
   .review-form__textarea {
-    width: calc(100% - 16px);
-    min-height: 144px;
+    width: 95%;
+    min-height: 128px;
   }
 
   /* БЛОК - КНОПКА ОТПРАВКИ ФОРМЫ */
@@ -463,6 +465,10 @@
     padding-right: 95px;
   }
 
+  .review-form__textarea {
+    width: 96%;
+  }
+
   /* БЛОК - КНОПКА ОТПРАВКИ ФОРМЫ */
   .review-form__container:nth-child(6) {
     padding-left: 95px;
@@ -473,7 +479,7 @@
     width: 384px;
   }
 
-  /* Декоративные элементы legend */
+  /* ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ <LEGEND> */
   .review-form__title--decor {
     &::before,
     &::after {
