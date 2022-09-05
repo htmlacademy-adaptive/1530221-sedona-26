@@ -15,9 +15,15 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  // outline: @outline;
 
-  @media (min-width: @tablet-width) {
+  &:focus {
+    outline: 2px solid rgba(84, 150, 189, 1);
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .main-header__logo {
     z-index: 3;
   }
 }

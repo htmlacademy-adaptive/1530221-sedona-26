@@ -56,6 +56,10 @@
   .font-medium-bold
 }
 
+.review-form__label:hover {
+  cursor: pointer;
+}
+
 /* ИНПУТЫ */
 .review-form__input {
   width: calc(100% - 20px);
@@ -68,11 +72,16 @@
   background-color: @input-color;
   font-family: inherit;
   .font-medium-bold;
-  color: rgba(0, 0, 0, 0.3); /* РАЗОБРАТЬСЯ! */
 }
 
-.review-form__choice {
-  display: none;
+.review-form__input:hover {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.review-form__input:focus,
+.review-form__input:active {
+  background-color: rgba(255, 255, 255, 1);
+  outline: 4px solid rgba(229, 229, 229, 1);
 }
 
 .review-form__mark {
@@ -106,6 +115,22 @@
 .review-form__choice[type="checkbox"]:checked +
 .review-form__mark {
   background-image: url("../img/checkbox-mark.svg");
+}
+
+.review-form__choice:focus +
+.review-form__mark {
+  background-color: rgba(213, 213, 213, 1);
+}
+
+.review-form__item:hover
+.review-form__mark {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.review-form__item:active
+.review-form__mark {
+  background-color: rgba(213, 213, 213, 1);
+  opacity: 0.3;
 }
 
 /* БЛОК - ПРЕДСТАВЬТЕСЬ */
@@ -194,7 +219,16 @@
   border: none;
   font-family: inherit;
   .font-medium-bold;
-  color: rgba(0, 0, 0, 0.3); /* РАЗОБРАТЬСЯ! */
+}
+
+.review-form__textarea:hover {
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.review-form__textarea:focus,
+.review-form__textarea:active {
+  background-color: rgba(213, 213, 213, 1);
+  outline: none;
 }
 
 /* БЛОК - КНОПКА ОТПРАВКИ ФОРМЫ */
