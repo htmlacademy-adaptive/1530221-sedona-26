@@ -1,9 +1,33 @@
 .copyright {
   display: flex;
+  // align-items: center;
+  height: 41px;
+}
+
+.copyright__link {
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   padding-bottom: 23px;
+  text-decoration: none;
   text-transform: uppercase;
+  color: @text-black;
+}
+
+.copyright__link:hover {
+  color: rgba(129, 179, 210, 1);
+  fill: currentColor;
+}
+
+.copyright__link:focus {
+  outline: 2px solid rgba(84, 150, 189, 1);
+}
+
+.copyright__link:active {
+  color: rgba(179, 179, 179, 1);
+  fill: currentColor;
 }
 
 .copyright__title {
@@ -15,7 +39,7 @@
 
 @media (min-width: @tablet-width) {
 
-  .copyright {
+  .copyright__link {
     padding: 0;
   }
 }

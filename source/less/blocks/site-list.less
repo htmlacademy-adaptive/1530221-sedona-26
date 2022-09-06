@@ -43,6 +43,10 @@
   color: @text-white;
 }
 
+.site-list__link:focus {
+  outline: none;
+}
+
 @media (min-width: @tablet-width) {
 
   .site-list {
@@ -79,6 +83,24 @@
   .site-list__link {
     color: rgba(118, 99, 87, 1);
   }
+
+  .site-list__item:not(.site-list__item--current) {
+
+    .site-list__link:hover {
+      color: rgba(129, 179, 210, 1);
+    }
+
+    .site-list__link:focus {
+      outline: none;
+      color: rgba(129, 179, 210, 1);
+      transform: scale(1.2);
+    }
+
+    .site-list__link:active {
+      opacity: 0.3;
+    }
+  }
+
 }
 
 @media (min-width: @desktop-width) {
