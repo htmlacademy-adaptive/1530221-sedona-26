@@ -24,13 +24,12 @@
 
   &--souvenirs {
     background-image: url("../img/subadvantages/gift.svg");
-    background-position: 18px 25px;
+    background-position: 22px 23px;
   }
 }
 
 .subadvantages__content {
   min-height: 113px;
-  // margin: 0 18px;
   padding-left: 65px;
   padding-right: 18px;
 }
@@ -47,8 +46,20 @@
 }
 
 @media (max-width: @mobile-width-only) {
+
   .subadvantages {
-    padding-bottom: 52px;
+    padding-bottom: 50px;
+  }
+
+  .subadvantages__item--food
+  .subadvantages__content {
+    padding-left: 70px;
+    padding-top: 2px;
+  }
+
+  .subadvantages__item--souvenirs
+  .subadvantages__content {
+    padding-left: 62px;
   }
 }
 
@@ -64,6 +75,31 @@
     justify-content: center;
   }
 
+  .subadvantages__item--housing {
+    background-size: 75px 72px;
+    background-position: 50% 23%;
+
+    .subadvantages__description {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .subadvantages__item--food {
+    background-size: 76px 68px;
+    background-position: 50% 24%;
+
+    .subadvantages__description {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .subadvantages__item--souvenirs {
+    background-size: 64px 75px;
+    background-position: 50% 23%;
+  }
+
   .subadvantages__content {
     width: 196px;
     min-height: 330px;
@@ -74,21 +110,6 @@
   .subadvantages__title {
     padding-top: 158px;
     padding-bottom: 22px;
-  }
-
-  .subadvantages__item--housing {
-    background-size: 75px 72px;
-    background-position: 50% 23%;
-  }
-
-  .subadvantages__item--food {
-    background-size: 76px 68px;
-    background-position: 50% 24%;
-  }
-
-  .subadvantages__item--souvenirs {
-    background-size: 64px 75px;
-    background-position: 50% 23%;
   }
 }
 
