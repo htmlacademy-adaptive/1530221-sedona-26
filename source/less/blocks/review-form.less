@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   text-transform: none;
-  .font-medium-bold
+  .font-medium-bold;
 }
 
 .review-form__label:hover {
@@ -93,13 +93,11 @@
   background-color: @input-color;
 }
 
-.review-form__section--impression
-.review-form__mark {
+.review-form__section--impression .review-form__mark {
   border-radius: 50%;
 }
 
-.review-form__choice:checked +
-.review-form__mark {
+.review-form__choice:checked + .review-form__mark {
   position: absolute;
   width: 46px;
   height: 46px;
@@ -107,28 +105,23 @@
   background-position: center;
 }
 
-.review-form__choice[type="radio"]:checked +
-.review-form__mark {
+.review-form__choice[type="radio"]:checked + .review-form__mark {
   background-image: url("../img/radio-mark.svg");
 }
 
-.review-form__choice[type="checkbox"]:checked +
-.review-form__mark {
+.review-form__choice[type="checkbox"]:checked + .review-form__mark {
   background-image: url("../img/checkbox-mark.svg");
 }
 
-.review-form__choice:focus +
-.review-form__mark {
+.review-form__choice:focus + .review-form__mark {
   background-color: rgba(213, 213, 213, 1);
 }
 
-.review-form__item:hover
-.review-form__mark {
+.review-form__item:hover .review-form__mark {
   background-color: rgba(229, 229, 229, 1);
 }
 
-.review-form__item:active
-.review-form__mark {
+.review-form__item:active .review-form__mark {
   background-color: rgba(213, 213, 213, 1);
   opacity: 0.3;
 }
@@ -145,7 +138,7 @@
 }
 
 /* БЛОК - КОНТАКТНАЯ ИНФОРМАЦИЯ */
-.review-form__container:nth-child(2){
+.review-form__container:nth-child(2) {
   padding-top: 21px;
   padding-bottom: 19px;
 
@@ -238,7 +231,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 0;
   border: none;
 }
 
@@ -354,6 +346,11 @@
     .review-form__description {
       margin-left: 49px;
     }
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 26px;
+    }
   }
 
   /* БЛОК - ОПИШИТЕ СВОИ ЭМОЦИИ */
@@ -394,7 +391,6 @@
 
   /* ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ <LEGEND> */
   .review-form__title--decor {
-
     &::before,
     &::after {
       content: "";
@@ -411,14 +407,6 @@
 
     &::after {
       right: -170px;
-    }
-  }
-
-  .review-form__container:nth-child(4) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 26px;
     }
   }
 }
@@ -443,7 +431,6 @@
   /* БЛОК - КОНТАКТНАЯ ИНФОРМАЦИЯ */
   .review-form__container:nth-child(2) {
     margin-left: 13px;
-    padding-left: 0;
     padding-left: 64px;
     border-left: 1px solid rgba(219, 219, 219, 1);
 
@@ -476,6 +463,11 @@
     .review-form__label {
       padding-left: 16px;
     }
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 35px;
+    }
   }
 
   /* БЛОК - ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ */
@@ -502,12 +494,22 @@
     .review-form__item:nth-child(4) {
       margin-left: -5px;
     }
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 26px;
+    }
   }
 
   /* БЛОК - ОПИШИТЕ СВОИ ЭМОЦИИ */
   .review-form__container:nth-child(5) {
     padding-left: 95px;
     padding-right: 95px;
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 11px;
+    }
   }
 
   .review-form__textarea {
@@ -537,30 +539,6 @@
 
     &::after {
       right: -325px;
-    }
-  }
-
-  .review-form__container:nth-child(3) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 35px;
-    }
-  }
-
-  .review-form__container:nth-child(4) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 26px;
-    }
-  }
-
-  .review-form__container:nth-child(5) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 11px;
     }
   }
 }
