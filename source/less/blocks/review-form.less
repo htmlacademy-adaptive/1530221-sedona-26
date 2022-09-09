@@ -24,6 +24,8 @@
 }
 
 .review-form__title {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-bottom: 22px;
 }
@@ -53,7 +55,7 @@
   display: flex;
   align-items: center;
   text-transform: none;
-  .font-medium-bold
+  .font-medium-bold;
 }
 
 .review-form__label:hover {
@@ -62,7 +64,7 @@
 
 /* ИНПУТЫ */
 .review-form__input {
-  width: calc(100% - 20px);
+  width: calc(100% - 16px);
   height: 58px;
   padding: 0;
   padding-left: 16px;
@@ -93,13 +95,11 @@
   background-color: @input-color;
 }
 
-.review-form__section--impression
-.review-form__mark {
+.review-form__section--impression .review-form__mark {
   border-radius: 50%;
 }
 
-.review-form__choice:checked +
-.review-form__mark {
+.review-form__choice:checked + .review-form__mark {
   position: absolute;
   width: 46px;
   height: 46px;
@@ -107,28 +107,23 @@
   background-position: center;
 }
 
-.review-form__choice[type="radio"]:checked +
-.review-form__mark {
+.review-form__choice[type="radio"]:checked + .review-form__mark {
   background-image: url("../img/radio-mark.svg");
 }
 
-.review-form__choice[type="checkbox"]:checked +
-.review-form__mark {
+.review-form__choice[type="checkbox"]:checked + .review-form__mark {
   background-image: url("../img/checkbox-mark.svg");
 }
 
-.review-form__choice:focus +
-.review-form__mark {
+.review-form__choice:focus + .review-form__mark {
   background-color: rgba(213, 213, 213, 1);
 }
 
-.review-form__item:hover
-.review-form__mark {
+.review-form__item:hover .review-form__mark {
   background-color: rgba(229, 229, 229, 1);
 }
 
-.review-form__item:active
-.review-form__mark {
+.review-form__item:active .review-form__mark {
   background-color: rgba(213, 213, 213, 1);
   opacity: 0.3;
 }
@@ -145,7 +140,7 @@
 }
 
 /* БЛОК - КОНТАКТНАЯ ИНФОРМАЦИЯ */
-.review-form__container:nth-child(2){
+.review-form__container:nth-child(2) {
   padding-top: 21px;
   padding-bottom: 19px;
 
@@ -238,7 +233,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 0;
   border: none;
 }
 
@@ -254,6 +248,17 @@
   font-weight: 400;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+}
+
+@media (max-width: @mobile-width-only) {
+  .review-form__section {
+    padding: 0 20px;
+  }
+
+  .review-form__container:nth-child(6) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -290,7 +295,7 @@
     border-right: 1px solid rgba(219, 219, 219, 1);
 
     .review-form__title {
-      margin-left: 21px;
+      margin-left: 81px;
       padding-top: 2px;
       padding-bottom: 27px;
     }
@@ -303,7 +308,7 @@
     padding-left: 44px;
 
     .review-form__title {
-      margin-left: -20px;
+      margin-left: -18px;
       padding-bottom: 27px;
     }
   }
@@ -354,6 +359,11 @@
     .review-form__description {
       margin-left: 49px;
     }
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 26px;
+    }
   }
 
   /* БЛОК - ОПИШИТЕ СВОИ ЭМОЦИИ */
@@ -394,7 +404,6 @@
 
   /* ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ <LEGEND> */
   .review-form__title--decor {
-
     &::before,
     &::after {
       content: "";
@@ -413,14 +422,6 @@
       right: -170px;
     }
   }
-
-  .review-form__container:nth-child(4) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 26px;
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -435,7 +436,7 @@
     border: none;
 
     .review-form__title {
-      margin-left: 32px;
+      margin-left: 167px;
       padding-top: 0;
     }
   }
@@ -443,12 +444,11 @@
   /* БЛОК - КОНТАКТНАЯ ИНФОРМАЦИЯ */
   .review-form__container:nth-child(2) {
     margin-left: 13px;
-    padding-left: 0;
     padding-left: 64px;
     border-left: 1px solid rgba(219, 219, 219, 1);
 
     .review-form__title {
-      margin-left: -33px;
+      margin-left: 30px;
       padding-top: 0;
     }
   }
@@ -476,6 +476,11 @@
     .review-form__label {
       padding-left: 16px;
     }
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 35px;
+    }
   }
 
   /* БЛОК - ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ */
@@ -488,8 +493,24 @@
 
     .review-form__list {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      column-gap: 25px;
       margin-left: 45px;
+    }
+
+    .review-form__item:nth-child(2) {
+      margin-left: 6px;
+    }
+
+    .review-form__item:nth-child(3) {
+      margin-left: 8px;
+    }
+
+    .review-form__item:nth-child(4) {
+      margin-left: -5px;
+    }
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 26px;
     }
   }
 
@@ -497,6 +518,11 @@
   .review-form__container:nth-child(5) {
     padding-left: 95px;
     padding-right: 95px;
+
+    .review-form__title--decor::before,
+    .review-form__title--decor::after {
+      top: 11px;
+    }
   }
 
   .review-form__textarea {
@@ -526,30 +552,6 @@
 
     &::after {
       right: -325px;
-    }
-  }
-
-  .review-form__container:nth-child(3) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 35px;
-    }
-  }
-
-  .review-form__container:nth-child(4) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 26px;
-    }
-  }
-
-  .review-form__container:nth-child(5) {
-
-    .review-form__title--decor::before,
-    .review-form__title--decor::after {
-      top: 11px;
     }
   }
 }

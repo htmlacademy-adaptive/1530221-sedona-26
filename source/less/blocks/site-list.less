@@ -48,11 +48,10 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .site-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    .font-small-bold
+    .font-small-bold;
   }
 
   .site-list::before {
@@ -79,13 +78,11 @@
     color: @text-black;
   }
 
-  .site-list__item--current
-  .site-list__link {
+  .site-list__item--current .site-list__link {
     color: rgba(118, 99, 87, 1);
   }
 
   .site-list__item:not(.site-list__item--current) {
-
     .site-list__link:hover {
       color: rgba(129, 179, 210, 1);
     }
@@ -100,7 +97,6 @@
       opacity: 0.3;
     }
   }
-
 }
 
 @media (min-width: @desktop-width) {

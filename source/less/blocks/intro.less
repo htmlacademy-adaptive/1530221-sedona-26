@@ -35,7 +35,6 @@
 }
 
 .intro--index {
-
   .intro__wrapper::after {
     content: "";
     position: absolute;
@@ -66,7 +65,6 @@
 }
 
 .intro--form {
-
   .intro__wrapper {
     margin-bottom: 18px;
   }
@@ -84,22 +82,17 @@
   }
 }
 
-
-
 @media (min-resolution: 2dppx) {
-
   .intro__image {
     background-image: @image-decor-mobile, url("../img/intro/intro-sub-bg-mobile@2x.jpg");
   }
 
-  .intro--index
-  .intro__image {
+  .intro--index .intro__image {
     background-image: @image-decor-mobile, url("../img/intro/intro-main-bg-mobile@2x.jpg");
   }
 }
 
 @media (min-width: @tablet-width) {
-
   .intro__wrapper {
     margin-bottom: 55px;
   }
@@ -124,60 +117,60 @@
     display: none;
   }
 
-  .intro--index
-  .intro__image {
-    min-height: 518px;
-    margin-bottom: 48px;
-    background-image: @image-decor-tablet, url("../img/intro/intro-main-bg-tablet@1x.jpg");
+  .intro--index {
+    .intro__wrapper {
+      margin-bottom: 56px;
+    }
+
+    .intro__image {
+      min-height: 518px;
+      margin-bottom: 48px;
+      background-image: @image-decor-tablet, url("../img/intro/intro-main-bg-tablet@1x.jpg");
+    }
+
+    .intro__picture {
+      margin-top: 76px;
+      width: 460px;
+      height: 350px;
+    }
+
+    .intro__title {
+      width: 484px;
+      padding-bottom: 28px;
+    }
+
+    .intro__description {
+      padding-bottom: 0;
+    }
   }
 
-  .intro--index
-  .intro__picture {
-    margin-top: 78px;
-    width: 460px;
-    height: 350px;
+  .intro--catalog {
+    .intro__title {
+      padding-bottom: 30px;
+    }
+
+    .intro__description {
+      width: 430px;
+      padding-bottom: 32px;
+    }
   }
 
-  .intro--index
-  .intro__title {
-    width: 484px;
-    padding-bottom: 28px;
-  }
+  .intro--form {
+    .intro__wrapper {
+      margin-bottom: 0;
+    }
 
-  .intro--index
-  .intro__description {
-    padding-bottom: 0;
-  }
+    .intro__image {
+      margin-bottom: 63px;
+    }
 
-  .intro--catalog
-  .intro__title {
-    padding-bottom: 30px;
-  }
+    .intro__title {
+      .font-biggest;
+    }
 
-  .intro--catalog
-  .intro__description {
-    width: 430px;
-    padding-bottom: 32px;
-  }
-
-  .intro--form
-  .intro__wrapper {
-    margin-bottom: 0;
-  }
-
-  .intro--form
-  .intro__image {
-    margin-bottom: 63px;
-  }
-
-  .intro--form
-  .intro__title {
-    .font-biggest;
-  }
-
-  .intro--form
-  .intro__description {
-    width: 440px;
+    .intro__description {
+      width: 440px;
+    }
   }
 }
 
@@ -186,14 +179,12 @@
     background-image: @image-decor-tablet, url("../img/intro/intro-sub-bg-tablet@2x.jpg");
   }
 
-  .intro--index
-  .intro__image {
+  .intro--index .intro__image {
     background-image: @image-decor-tablet, url("../img/intro/intro-main-bg-tablet@2x.jpg");
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .intro__wrapper {
     margin-bottom: 43px;
   }
@@ -210,46 +201,48 @@
     height: 80px;
   }
 
-  .intro--index
-  .intro__image {
-    margin-bottom: 60px;
-    background-image: @image-decor-desktop, url("../img/intro/intro-main-bg-desktop@1x.jpg");
+  .intro--index {
+    .intro__wrapper {
+      margin-bottom: 44px;
+    }
+
+    .intro__image {
+      margin-bottom: 60px;
+      background-image: @image-decor-desktop, url("../img/intro/intro-main-bg-desktop@1x.jpg");
+    }
   }
 
-  .intro--catalog
-  .intro__wrapper{
-    margin-bottom: 58px;
+  .intro--catalog {
+    .intro__wrapper {
+      margin-bottom: 58px;
+    }
+
+    .intro__image {
+      margin-bottom: 98px;
+    }
   }
 
-  .intro--catalog
-  .intro__image {
-    margin-bottom: 98px;
-  }
+  .intro--form {
+    .intro__wrapper {
+      margin-bottom: 60px;
+    }
 
-  .intro--form
-  .intro__wrapper {
-    margin-bottom: 60px;
-  }
+    .intro__image {
+      margin-bottom: 112px;
+    }
 
-  .intro--form
-  .intro__image {
-    margin-bottom: 112px;
-  }
-
-  .intro--form
-  .intro__title {
-    padding-bottom: 32px;
+    .intro__title {
+      padding-bottom: 32px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
-
   .intro__image {
     background-image: @image-decor-desktop, url("../img/intro/intro-sub-bg-desktop@2x.jpg");
   }
 
-  .intro--index
-  .intro__image {
+  .intro--index .intro__image {
     background-image: @image-decor-desktop, url("../img/intro/intro-main-bg-desktop@2x.jpg");
   }
 }
