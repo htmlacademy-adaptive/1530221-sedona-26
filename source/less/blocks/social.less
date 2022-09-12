@@ -1,6 +1,7 @@
 .social__list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
   margin: 0;
   padding: 0;
 }
@@ -15,13 +16,8 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  text-align: center;
   background-color: @blue-color;
   list-style-type: none;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 6px;
 }
 
 .social__link {
